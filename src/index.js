@@ -1,4 +1,3 @@
-import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
 
@@ -13,7 +12,7 @@ function extractLinks(text) {
 }
 
 function handlesError(error) {
-    throw new Error(chalk.red(error.code, 'There are no files in the path'));
+    throw new Error(error.code, 'There are no files in the path');
 }
 
 async function getFile(paramPath) {

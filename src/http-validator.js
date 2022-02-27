@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 
 function handleError(error) {
     throw new Error(error.message);
